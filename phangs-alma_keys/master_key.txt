@@ -176,16 +176,14 @@
 
 # Locations
 
-key_dir        	    /home/leroy.42/python/phangs_imaging_scripts/phangs-alma_keys/
-cleanmask_root		/export/bell-tycho/leroy.42/reduction/alma/phangs-alma/cleanmasks/
-imaging_root		/export/bell-tycho/leroy.42/reduction/alma/phangs-alma/imaging/
-postprocess_root	/export/bell-tycho/leroy.42/reduction/alma/phangs-alma/postprocess/
-derived_root		/export/bell-tycho/leroy.42/reduction/alma/phangs-alma/derived/
-release_root		/export/bell-tycho/leroy.42/reduction/alma/phangs-alma/release/
-ms_root			    /export/bell-tycho/leroy.42/reduction/alma/phangs-alma/uvdata/
-ms_root			    /data/young/leroy.42/alma_data/PHANGS/
-ms_root             /data/rubin/leroy.42/alma_data/PHANGS/
-singledish_root		/export/bell-tycho/leroy.42/reduction/alma/phangs-alma/singledish/v4_singledish/
+key_dir        	    /lustre/opsw/work/abarnes/phangs/ngc628_reduction/phangs_imaging_scripts/phangs-alma_keys/
+cleanmask_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/clean_masks
+imaging_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/imaging/
+postprocess_root	/lustre/opsw/work/abarnes/phangs/ngc628_reduction/postprocess/
+derived_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/derived/
+release_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/release/
+ms_root			    /lustre/opsw/work/abarnes/phangs/ngc628_reduction/uvdata/
+singledish_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/single_dish/
 vfield_root		    /export/bell-tycho/leroy.42/reduction/alma/phangs-alma/vfields/
 
 # Data files
