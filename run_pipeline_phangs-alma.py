@@ -25,21 +25,10 @@ do_derived = False
 do_release = False
 
 # Targets to process
-targets = [
-    "ngc0628",
-]
-
-line_products = [
-    "co21",
-]
-interf_configs = [
-    "7m",
-    "12m",
-]
-feather_configs = [
-    "7m+tp",
-    '12m+7m+tp',
-]
+targets = ["ngc0628"]
+line_products = ["co21"]
+interf_configs = ["12m+7m"]
+feather_configs = ["12m+7m+tp"]
 
 no_cont = False
 
