@@ -3,7 +3,7 @@ import sys
 from casatasks import casalog
 
 # Add analysisUtils to the path. Make sure to set this to where you have analysisUtils downloaded!
-au_path = "path/to/analysis_scripts"
+au_path = "/nfs/home/abarnes/PHANGS/ALMA/analysis_scripts/analysis_scripts"
 sys.path.append(au_path)
 
 import phangsPipeline as ppl
@@ -14,23 +14,23 @@ casa_enabled = is_casa_installed()
 # YOU SHOULD EDIT THINGS BELOW THIS #
 
 # Path to your master key
-master_key_file = "path/to/master_key.txt"
+master_key_file = "/nfs/home/abarnes/PHANGS/ALMA/phangs_imaging_scripts/phangs-alma_keys/master_key.txt"
 
 # Steps to run
 do_singledish = False
 do_staging = True
 do_imaging = True
 do_postprocess = True
-do_derived = True
+do_derived = False
 do_release = False
 
 # Targets to process
 targets = [
-    "some_exciting_galaxy",
+    "ngc0628",
 ]
 
 line_products = [
-    "a_thrilling_line",
+    "co21",
 ]
 interf_configs = [
     "7m",
@@ -41,23 +41,23 @@ feather_configs = [
     '12m+7m+tp',
 ]
 
-no_cont = True
+no_cont = False
 
 imaging_method = "tclean"
 
 # Switches for derived products
-do_convolve = True
-do_noise = True
-do_strictmask = True
-do_broadmask = True
-do_moments = True
-do_secondary = True
+do_convolve = False
+do_noise = False
+do_strictmask = False
+do_broadmask = False
+do_moments = False
+do_secondary = False
 
 # new DR5 routines (shuffling and flat maps)
 do_vfield = False  # creates a velocity field for shuffling
-do_shuffling = True  # runs independently from other tasks
-do_flatmask = True  # requires noise and broad/strict masks to join
-do_flatmaps = True  # requires flat masks
+do_shuffling = False  # runs independently from other tasks
+do_flatmask = False  # requires noise and broad/strict masks to join
+do_flatmaps = False  # requires flat masks
 
 # You should not need to edit below here
 

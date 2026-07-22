@@ -176,15 +176,15 @@
 
 # Locations
 
-key_dir        	    /lustre/opsw/work/abarnes/phangs/ngc628_reduction/phangs_imaging_scripts/phangs-alma_keys/
-cleanmask_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/clean_masks
-imaging_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/imaging/
-postprocess_root	/lustre/opsw/work/abarnes/phangs/ngc628_reduction/postprocess/
-derived_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/derived/
-release_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/release/
-ms_root			    /lustre/opsw/work/abarnes/phangs/ngc628_reduction/uvdata/
-singledish_root		/lustre/opsw/work/abarnes/phangs/ngc628_reduction/single_dish/
-vfield_root		    /export/bell-tycho/leroy.42/reduction/alma/phangs-alma/vfields/
+key_dir        	    /nfs/home/abarnes/PHANGS/ALMA/phangs_imaging_scripts/phangs-alma_keys/
+cleanmask_root		/nfs/home/abarnes/PHANGS/ALMA/clean_masks
+imaging_root		/nfs/home/abarnes/PHANGS/ALMA/imaging/
+postprocess_root	/nfs/home/abarnes/PHANGS/ALMA/postprocess/
+derived_root		/nfs/home/abarnes/PHANGS/ALMA/derived/
+release_root		/nfs/home/abarnes/PHANGS/ALMA/release/
+ms_root			    /nfs/home/abarnes/PHANGS/ALMA/uvdata/
+singledish_root		/nfs/home/abarnes/PHANGS/ALMA/single_dish/
+vfield_root		    /nfs/home/abarnes/PHANGS/ALMA/vfields/
 
 # Data files
 
