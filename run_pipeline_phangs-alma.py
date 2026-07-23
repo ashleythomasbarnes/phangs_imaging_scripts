@@ -18,7 +18,7 @@ master_key_file = "/nfs/home/abarnes/PHANGS/ALMA/phangs_imaging_scripts/phangs-a
 
 # Steps to run
 do_singledish = False
-do_staging = True
+do_staging = False
 do_imaging = True
 do_postprocess = True
 do_derived = False
@@ -30,7 +30,7 @@ line_products = ["co21"]
 interf_configs = ["12m+7m"]
 feather_configs = ["12m+7m+tp"]
 
-no_cont = False
+no_cont = True
 
 imaging_method = "tclean"
 
