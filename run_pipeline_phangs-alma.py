@@ -43,10 +43,10 @@ do_moments = True
 do_secondary = True
 
 # new DR5 routines (shuffling and flat maps)
-do_vfield = False  # creates a velocity field for shuffling
-do_shuffling = False  # runs independently from other tasks
-do_flatmask = False  # requires noise and broad/strict masks to join
-do_flatmaps = False  # requires flat masks
+do_vfield = True  # creates a velocity field for shuffling
+do_shuffling = True  # runs independently from other tasks
+do_flatmask = True  # requires noise and broad/strict masks to join
+do_flatmaps = True  # requires flat masks
 
 # You should not need to edit below here
 
