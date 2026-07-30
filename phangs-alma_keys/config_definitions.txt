@@ -150,10 +150,10 @@ line_product    c18o21    {'fitorder':0,'combinespw':False,'lines_to_flag':['c18
 cont_product    cont      {'freq_ranges_ghz':[[214.87,216.83],[217.51,219.36],[229.49,230.40],[230.62,232.58]],'lines_to_flag':['co','13co','c18o','hcn','hcop']}
 
 interf_config   12m       {'array_tags':['12m']}
-interf_config   12m       {'clean_scales_arcsec':[0,1,2.5,5.0]}
+interf_config   12m       {'clean_scales_arcsec':[0,0.2,0.5,1,2.5,5.0]}
 
 interf_config   12m+7m    {'array_tags':['12m','7m']}
-interf_config   12m+7m    {'clean_scales_arcsec':[0,1,2.5,5.0,10.0]}
+interf_config   12m+7m    {'clean_scales_arcsec':[0,0.2,0.5,1,2.5,5.0,10.0]}
 
 interf_config   7m        {'array_tags':['7m']}
 interf_config   7m        {'clean_scales_arcsec':[0,5.0,10.0]}
