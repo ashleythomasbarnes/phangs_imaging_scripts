@@ -87,7 +87,9 @@ def prep_sd_for_feather(
                 fitsimage=current_infile,
                 imagename=current_outfile,
                 zeroblanks=False,
-                overwrite=overwrite)
+                overwrite=overwrite,
+                defaultaxes=True,
+                defaultaxesvalues=["", "", "", "I"])
             current_infile = current_outfile
 
     # Align the single dish data to the astrometric grid of the interferometric data

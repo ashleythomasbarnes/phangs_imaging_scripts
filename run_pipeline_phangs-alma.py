@@ -19,7 +19,7 @@ master_key_file = "/nfs/home/abarnes/PHANGS/ALMA/phangs_imaging_scripts/phangs-a
 # Steps to run
 do_singledish = False
 do_staging = False
-do_imaging = True
+do_imaging = False
 do_postprocess = True
 do_derived = False
 do_release = False
