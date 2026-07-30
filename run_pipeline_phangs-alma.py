@@ -18,10 +18,10 @@ master_key_file = "/nfs/home/abarnes/PHANGS/ALMA/phangs_imaging_scripts/phangs-a
 
 # Steps to run
 do_singledish = False
-do_staging = False
-do_imaging = False
-do_postprocess = False
-do_derived = True
+do_staging = True
+do_imaging = True
+do_postprocess = True
+do_derived = False
 do_release = False
 
 # Targets to process
@@ -35,18 +35,18 @@ no_cont = True
 imaging_method = "tclean"
 
 # Switches for derived products
-do_convolve = True
-do_noise = True
-do_strictmask = True
-do_broadmask = True
-do_moments = True
-do_secondary = True
+do_convolve = False
+do_noise = False
+do_strictmask = False
+do_broadmask = False
+do_moments = False
+do_secondary = False
 
 # new DR5 routines (shuffling and flat maps)
-do_vfield = True  # creates a velocity field for shuffling
-do_shuffling = True  # runs independently from other tasks
-do_flatmask = True  # requires noise and broad/strict masks to join
-do_flatmaps = True  # requires flat masks
+do_vfield = False  # creates a velocity field for shuffling
+do_shuffling = False  # runs independently from other tasks
+do_flatmask = False  # requires noise and broad/strict masks to join
+do_flatmaps = False  # requires flat masks
 
 # You should not need to edit below here
 
