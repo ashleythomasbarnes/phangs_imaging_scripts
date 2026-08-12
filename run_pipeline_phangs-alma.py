@@ -18,19 +18,28 @@ master_key_file = "/nfs/home/abarnes/PHANGS/ALMA/phangs_imaging_scripts/phangs-a
 
 # Steps to run
 do_singledish = False
-do_staging = False
+do_staging = True
 do_imaging = True
 do_postprocess = True
 do_derived = False
 do_release = False
 
-# Targets to process
-targets = ["ngc0628"]
-line_products = ["co21"]
-interf_configs = ["12m+7m"]
-feather_configs = ["12m+7m+tp"]
+# Previous CO(2-1) selection. The 12m+7m configuration combines both
+# 12-metre array tags and the 7-metre data.
+# targets = ["ngc0628"]
+# line_products = ["co21"]
+# interf_configs = ["12m+7m"]
+# feather_configs = ["12m+7m+tp"]
+# no_cont = True
+# do_feather = True
 
-no_cont = True
+# Process the 2024.1.01667 12-metre data only.
+targets = ["ngc0628"]
+line_products = ["co21", "13co21", "c18o21"]
+interf_configs = ["12mhigh"]
+feather_configs = []
+no_cont = False
+do_feather = False
 
 imaging_method = "tclean"
 
@@ -186,8 +195,8 @@ if casa_enabled:
     # the imaging loop call but this call does everything.
 
     if do_imaging:
-        high_snr = 4.0
-        low_snr = 2.0
+        high_snr = None
+        low_snr = None
         absolute = True
 
         convergence_fracflux = 0.01
@@ -225,9 +234,9 @@ if casa_enabled:
     if do_postprocess:
         pp_handler.loop_postprocess(
             do_prep=True,
-            do_feather=True,
+            do_feather=do_feather,
             feather_before_mosaic=True,
-            do_mosaic=True,
+            do_mosaic=False,
             do_cleanup=True,
             imaging_method=imaging_method,
         )
