@@ -51,6 +51,7 @@ all      co21        all           cube_mosaic.clean
 # 12m      co21        all           cube_mosaic.clean
 # 7m       co21        all           cube_mosaic.clean
 # all      co21        singlescale   cube_mosaic.clean
+12mhigh  co21        all           cube_mosaic.clean
 12mhigh  c18o21      all           cube_mosaic.clean
 12mhigh  13co21      all           cube_mosaic.clean
 12mhigh  cont        all           continuum_mosaic.clean
