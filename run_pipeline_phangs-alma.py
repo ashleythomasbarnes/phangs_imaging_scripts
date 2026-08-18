@@ -19,8 +19,10 @@ master_key_file = "/nfs/home/abarnes/PHANGS/ALMA/phangs_imaging_scripts/phangs-a
 # Steps to run
 do_singledish = False
 do_staging = True
-do_imaging = True
-do_postprocess = True
+# do_imaging = True
+# do_postprocess = True
+do_imaging = False
+do_postprocess = False
 do_derived = False
 do_release = False
 
@@ -143,46 +145,47 @@ if casa_enabled:
     # concatenation into a single measurement set. The overwrite=True flag
     # is needed to ensure that previous runs can be overwritten.
 
+    # Resume from completed line staging and extract only the continuum.
     if do_staging:
-        uv_handler.loop_stage_uvdata(
-            do_copy=True,
-            do_contsub=True,
-            do_extract_line=False,
-            do_extract_cont=False,
-            require_full_line_coverage=True,
-            do_remove_staging=False,
-            overwrite=True,
-        )
+        # uv_handler.loop_stage_uvdata(
+        #     do_copy=True,
+        #     do_contsub=True,
+        #     do_extract_line=False,
+        #     do_extract_cont=False,
+        #     require_full_line_coverage=True,
+        #     do_remove_staging=False,
+        #     overwrite=True,
+        # )
 
-        uv_handler.loop_stage_uvdata(
-            do_copy=False,
-            do_contsub=False,
-            do_extract_line=True,
-            do_extract_cont=False,
-            require_full_line_coverage=True,
-            do_remove_staging=False,
-            overwrite=True,
-        )
+        # uv_handler.loop_stage_uvdata(
+        #     do_copy=False,
+        #     do_contsub=False,
+        #     do_extract_line=True,
+        #     do_extract_cont=False,
+        #     require_full_line_coverage=True,
+        #     do_remove_staging=False,
+        #     overwrite=True,
+        # )
 
         uv_handler.loop_stage_uvdata(
             do_copy=False,
             do_contsub=False,
             do_extract_line=False,
             do_extract_cont=True,
-            require_full_line_coverage=True,
+            require_full_cont_coverage=True,
             do_remove_staging=False,
             overwrite=True,
         )
 
-        uv_handler.loop_stage_uvdata(
-            do_copy=False,
-            do_contsub=False,
-            do_extract_line=False,
-            do_extract_cont=False,
-            require_full_line_coverage=True,
-            do_remove_staging=True,
-            overwrite=True,
-        )
+        # uv_handler.loop_stage_uvdata(
+        #     do_copy=False,
+        #     do_contsub=False,
+        #     do_extract_line=False,
+        #     do_extract_cont=False,
+        #     require_full_line_coverage=True,
+        #     do_remove_staging=True,
+        #     overwrite=True,
+        # )
 
     ##############################################################################
     # Step through imaging
