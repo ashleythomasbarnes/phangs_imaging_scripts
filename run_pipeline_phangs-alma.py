@@ -3,7 +3,7 @@ import sys
 from casatasks import casalog
 
 # Add analysisUtils to the path. Make sure to set this to where you have analysisUtils downloaded!
-au_path = "/nfs/home/abarnes/PHANGS/ALMA/analysis_scripts"
+au_path = "/nfs/home/abarnes/W33/analysis_scripts/analysis_scripts"
 sys.path.append(au_path)
 
 import phangsPipeline as ppl
