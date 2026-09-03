@@ -14,10 +14,10 @@
 
 ##########################################################################
 
-w33  2017.1.01355.L  all  7m       1  2017.1.01355.L/science_goal.uid___A001_X1296_X1ed/group.uid___A001_X1296_X1ee/member.uid___A001_X1296_X1f1/calibration/uid___A002_Xc5d6d1_X500c.ms.flagversion
-w33  2017.1.01355.L  all  7m       2  2017.1.01355.L/science_goal.uid___A001_X1296_X1ed/group.uid___A001_X1296_X1ee/member.uid___A001_X1296_X1f1/calibration/uid___A002_Xc77d4f_X3cc5.ms.flagversion
-w33  2017.1.01355.L  all  12mlow   1  2017.1.01355.L/science_goal.uid___A001_X1296_X1ed/group.uid___A001_X1296_X1ee/member.uid___A001_X1296_X1ef/calibration/uid___A002_Xccea8d_Xc916.ms.flagversion
-w33  2025.1.01454.S  all  12mhigh  1  2025.1.01454.S/science_goal.uid___A001_X3833_X9dd/group.uid___A001_X3833_X9de/member.uid___A001_X3833_X9df/calibration/uid___A002_X1323597_X175d3.ms.flagversion
-w33  2025.1.01454.S  all  12mhigh  2  2025.1.01454.S/science_goal.uid___A001_X3833_X9dd/group.uid___A001_X3833_X9de/member.uid___A001_X3833_X9df/calibration/uid___A002_X13270a2_X23efd.ms.flagversion
-w33  2025.1.01454.S  all  12mhigh  3  2025.1.01454.S/science_goal.uid___A001_X3833_X9dd/group.uid___A001_X3833_X9de/member.uid___A001_X3833_X9df/calibration/uid___A002_X13270a2_X8575.ms.flagversion
-w33  2025.1.01454.S  all  12mhigh  4  2025.1.01454.S/science_goal.uid___A001_X3833_X9dd/group.uid___A001_X3833_X9de/member.uid___A001_X3833_X9df/calibration/uid___A002_X13c84cf_X1a1d2.ms.flagversion
+w33  2017.1.01355.L  all  7m       1  2017.1.01355.L/science_goal.uid___A001_X1296_X1ed/group.uid___A001_X1296_X1ee/member.uid___A001_X1296_X1f1/calibration/uid___A002_Xc5d6d1_X500c.ms.flagversions
+w33  2017.1.01355.L  all  7m       2  2017.1.01355.L/science_goal.uid___A001_X1296_X1ed/group.uid___A001_X1296_X1ee/member.uid___A001_X1296_X1f1/calibration/uid___A002_Xc77d4f_X3cc5.ms.flagversions
+w33  2017.1.01355.L  all  12mlow   1  2017.1.01355.L/science_goal.uid___A001_X1296_X1ed/group.uid___A001_X1296_X1ee/member.uid___A001_X1296_X1ef/calibration/uid___A002_Xccea8d_Xc916.ms.flagversions
+w33  2025.1.01454.S  all  12mhigh  2  2025.1.01454.S/science_goal.uid___A001_X3833_X9dd/group.uid___A001_X3833_X9de/member.uid___A001_X3833_X9df/calibration/uid___A002_X1323597_X175d3.ms.flagversions
+w33  2025.1.01454.S  all  12mhigh  3  2025.1.01454.S/science_goal.uid___A001_X3833_X9dd/group.uid___A001_X3833_X9de/member.uid___A001_X3833_X9df/calibration/uid___A002_X13270a2_X23efd.ms.flagversions
+w33  2025.1.01454.S  all  12mhigh  4  2025.1.01454.S/science_goal.uid___A001_X3833_X9dd/group.uid___A001_X3833_X9de/member.uid___A001_X3833_X9df/calibration/uid___A002_X13270a2_X8575.ms.flagversions
+w33  2025.1.01454.S  all  12mhigh  5  2025.1.01454.S/science_goal.uid___A001_X3833_X9dd/group.uid___A001_X3833_X9de/member.uid___A001_X3833_X9df/calibration/uid___A002_X13c84cf_X1a1d2.ms.flagversions
