@@ -3,7 +3,7 @@ import sys
 from casatasks import casalog
 
 # Add analysisUtils to the path. Make sure to set this to where you have analysisUtils downloaded!
-au_path = "path/to/analysis_scripts"
+au_path = "/nfs/home/abarnes/PHANGS/ALMA/analysis_scripts"
 sys.path.append(au_path)
 
 import phangsPipeline as ppl
@@ -14,36 +14,35 @@ casa_enabled = is_casa_installed()
 # YOU SHOULD EDIT THINGS BELOW THIS #
 
 # Path to your master key
-master_key_file = "path/to/master_key.txt"
+master_key_file = "/nfs/home/abarnes/W33/phangs-alma_keys/master_key.txt"
 
 # Steps to run
 do_singledish = False
 do_staging = True
 do_imaging = True
 do_postprocess = True
-do_derived = True
+do_derived = False
 do_release = False
 
 # Targets to process
 targets = [
-    "some_exciting_galaxy",
+    "w33",
 ]
 
 line_products = [
-    "a_thrilling_line",
+    "co21",
 ]
 interf_configs = [
-    "7m",
-    "12m",
+    "12m+7m",
 ]
 feather_configs = [
-    "7m+tp",
-    '12m+7m+tp',
+    # "7m+tp",
+    # "12m+7m+tp",
 ]
 
 no_cont = True
-
 imaging_method = "tclean"
+do_feather = False
 
 # Switches for derived products
 do_convolve = True
@@ -166,15 +165,16 @@ if casa_enabled:
             overwrite=True,
         )
 
-        uv_handler.loop_stage_uvdata(
-            do_copy=False,
-            do_contsub=False,
-            do_extract_line=False,
-            do_extract_cont=True,
-            require_full_line_coverage=True,
-            do_remove_staging=False,
-            overwrite=True,
-        )
+        # Enable this block later when continuum imaging is requested.
+        # uv_handler.loop_stage_uvdata(
+        #     do_copy=False,
+        #     do_contsub=False,
+        #     do_extract_line=False,
+        #     do_extract_cont=True,
+        #     require_full_line_coverage=True,
+        #     do_remove_staging=False,
+        #     overwrite=True,
+        # )
 
         uv_handler.loop_stage_uvdata(
             do_copy=False,
@@ -236,7 +236,7 @@ if casa_enabled:
     if do_postprocess:
         pp_handler.loop_postprocess(
             do_prep=True,
-            do_feather=True,
+            do_feather=do_feather,
             feather_before_mosaic=True,
             do_mosaic=True,
             do_cleanup=True,
