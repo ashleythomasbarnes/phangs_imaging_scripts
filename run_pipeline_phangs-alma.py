@@ -14,7 +14,7 @@ casa_enabled = is_casa_installed()
 # YOU SHOULD EDIT THINGS BELOW THIS #
 
 # Path to your master key
-master_key_file = "/nfs/home/abarnes/W33/phangs-alma_keys/master_key.txt"
+master_key_file = "/nfs/home/abarnes/W33/phangs_imaging_scripts/phangs-alma_keys/master_key.txt"
 
 # Steps to run
 do_singledish = False

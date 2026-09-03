@@ -176,7 +176,7 @@
 
 # Locations
 
-key_dir              /nfs/home/abarnes/W33/phangs-alma_keys/
+key_dir              /nfs/home/abarnes/W33/phangs_imaging_scripts/phangs-alma_keys/
 cleanmask_root        /nfs/home/abarnes/W33/cleanmasks/
 imaging_root          /nfs/home/abarnes/W33/imaging/
 postprocess_root      /nfs/home/abarnes/W33/postprocess/
