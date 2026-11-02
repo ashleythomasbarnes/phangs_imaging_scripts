@@ -24,22 +24,22 @@ do_postprocess = True
 do_derived = False
 do_release = False
 
-# Previous CO(2-1) selection. The 12m+7m configuration combines both
-# 12-metre array tags and the 7-metre data.
-# targets = ["ngc0628"]
-# line_products = ["co21"]
-# interf_configs = ["12m+7m"]
-# feather_configs = ["12m+7m+tp"]
-# no_cont = True
-# do_feather = True
-
-# Process the 2024.1.01667 12-metre data only.
+# CO(2-1) selection. The 12m+7m configuration combines both
+# 12-metre array tags and the 7-metre data, feathered with TP.
 targets = ["ngc0628"]
-line_products = ["co21", "13co21", "c18o21"]
-interf_configs = ["12mhigh"]
-feather_configs = []
-no_cont = False
-do_feather = False
+line_products = ["co21"]
+interf_configs = ["12m+7m"]
+feather_configs = ["12m+7m+tp"]
+no_cont = True
+do_feather = True
+
+# Previous selection: the 2024.1.01667 12-metre data only.
+# targets = ["ngc0628"]
+# line_products = ["co21", "13co21", "c18o21"]
+# interf_configs = ["12mhigh"]
+# feather_configs = []
+# no_cont = False
+# do_feather = False
 
 imaging_method = "tclean"
 
