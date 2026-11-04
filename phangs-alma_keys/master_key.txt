@@ -178,9 +178,9 @@
 
 key_dir        	    /nfs/home/abarnes/PHANGS/ALMA/phangs_imaging_scripts/phangs-alma_keys/
 cleanmask_root		/nfs/home/abarnes/PHANGS/ALMA/clean_masks
-imaging_root		/nfs/home/abarnes/PHANGS/ALMA/imaging_500kms/
-postprocess_root	/nfs/home/abarnes/PHANGS/ALMA/postprocess_500kms/
-derived_root		/nfs/home/abarnes/PHANGS/ALMA/derived_500kms/
+imaging_root		/nfs/home/abarnes/PHANGS/ALMA/imaging_500kms_1kms/
+postprocess_root	/nfs/home/abarnes/PHANGS/ALMA/postprocess_500kms_1kms/
+derived_root		/nfs/home/abarnes/PHANGS/ALMA/derived_500kms_1kms/
 release_root		/nfs/home/abarnes/PHANGS/ALMA/release/
 ms_root			    /nfs/home/abarnes/PHANGS/ALMA/uvdata/
 singledish_root		/nfs/home/abarnes/PHANGS/ALMA/single_dish/
