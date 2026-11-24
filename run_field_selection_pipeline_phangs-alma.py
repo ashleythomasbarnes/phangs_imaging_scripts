@@ -11,6 +11,11 @@ phangsPipeline.utilsFieldSelection implementation.
 """
 
 import os
+import sys
+
+# utilsFieldSelection imports analysisUtils, so it must be on the path first.
+au_path = "/nfs/home/abarnes/PHANGS/ALMA/analysis_scripts/analysis_scripts"
+sys.path.append(au_path)
 
 from phangsPipeline import utilsFieldSelection
 
