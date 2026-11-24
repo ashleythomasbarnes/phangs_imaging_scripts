@@ -44,9 +44,9 @@ ms_list = [os.path.join(ms_root, path) for path in relative_ms_paths]
 
 utilsFieldSelection.process_ms_list(
     ms_list=ms_list,
-    lower_left_ra_dec="J2000 01:36:46.3246735920 +15:45:57.1071148991",
-    upper_right_ra_dec="J2000 01:36:42.5660666166 +15:46:48.5652118062",
-    suffix=".split.fields",
+    lower_left_ra_dec="J2000 01:36:40.9157748753 +15:48:25.0287826792",
+    upper_right_ra_dec="J2000 01:36:36.8288475739 +15:49:21.0340232935",
+    suffix=".split.fields.arm",
     overwrite=False,
     verbose=True,
 )
